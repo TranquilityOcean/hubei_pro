@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>images/chuNeng.png</file>
+        <file>images/dianWang.png</file>
+        <file>images/guangFu.png</file>
+        <file>images/yuanQu.png</file>
+    </qresource>
+</RCC>
