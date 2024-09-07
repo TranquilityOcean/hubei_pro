@@ -29,6 +29,8 @@ include(./QXlsx.pri)
 
 
 SOURCES += \
+    arrowlabel.cpp \
+    arrowlabelflow.cpp \
     batterywidget.cpp \
     datashow.cpp \
     main.cpp \
@@ -36,6 +38,8 @@ SOURCES += \
     qcustomplot.cpp
 
 HEADERS += \
+    arrowlabel.h \
+    arrowlabelflow.h \
     batterywidget.h \
     datashow.h \
     mainwindow.h \

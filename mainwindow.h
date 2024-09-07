@@ -17,23 +17,29 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 private slots:
-    void on_pushButton_3_clicked();
-
     void on_comboBox_currentIndexChanged(int index);
 
     void on_btn_start_clicked();
 
     void on_btn_stop_clicked();
+    void updateValue(QString time,double fuheValue, double pv_value, double exchangeValue, double eneryValue, ShowMode mode,double chuNengPercent);
+
+    void on_btn_dataSel_clicked();
+    void updateArrowValue();
+protected:
+    void paintEvent(QPaintEvent *event) override;
 
 private:
     Ui::MainWindow *ui;
     BatteryWidget *batteryWidget; // 电池控件指针
     DataShow * m_dataShow;
     bool m_isForward = true;                 //是否电量增长
-    int  m_curBatteryVal = 16;
-    int  m_batteryMaxVal = 95;
-    int  m_batteryMinVal = 15;
-    ShowMode m_mode = NORMAL;
+    double  m_curBatteryVal = 20;//百分比
+    double  m_batteryMaxVal = 90;//百分比
+    double  m_batteryMinVal = 20;//百分比
     bool m_btn_goOn = true;
+    QTimer *m_timer;
+    QTimer *m_timer_updateArrow;
+    double m_offset = 0;
 };
 #endif // MAINWINDOW_H

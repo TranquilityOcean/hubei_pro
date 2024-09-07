@@ -2,8 +2,8 @@
 #define TYPE_H
 enum ShowMode
 {
-   NORMAL,
-   Accelerate
+   NORMAL, //正常模式
+   Accelerate //加速模式
 };
 enum ChooseDataDate
 {

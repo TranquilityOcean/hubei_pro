@@ -31,6 +31,8 @@ build/obj/xlsxworkbook.o
 build/obj/xlsxworksheet.o
 build/obj/xlsxzipreader.o
 build/obj/xlsxzipwriter.o
+build/obj/arrowlabel.o
+build/obj/arrowlabelflow.o
 build/obj/batterywidget.o
 build/obj/datashow.o
 build/obj/main.o
@@ -38,6 +40,8 @@ build/obj/mainwindow.o
 build/obj/qcustomplot.o
 build/obj/qrc_hubei_resource.o
 build/obj/moc_xlsxdocument.o
+build/obj/moc_arrowlabel.o
+build/obj/moc_arrowlabelflow.o
 build/obj/moc_batterywidget.o
 build/obj/moc_datashow.o
 build/obj/moc_mainwindow.o

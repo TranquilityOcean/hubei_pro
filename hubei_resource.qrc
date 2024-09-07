@@ -4,5 +4,16 @@
         <file>images/dianWang.png</file>
         <file>images/guangFu.png</file>
         <file>images/yuanQu.png</file>
+        <file>images/background.png</file>
+        <file>images/redColor.png</file>
+        <file>images/downArrow.png</file>
+        <file>images/upArrow.png</file>
+        <file>images/micro.png</file>
+        <file>images/downArrow-1.png</file>
+        <file>images/upArrow-1.png</file>
+        <file>images/downArrow-2.png</file>
+        <file>images/upArrow-2.png</file>
+        <file>images/downArrow-3.png</file>
+        <file>images/upArrow-3.png</file>
     </qresource>
 </RCC>
