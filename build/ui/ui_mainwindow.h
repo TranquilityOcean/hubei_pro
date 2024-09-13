@@ -81,7 +81,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(1100, 651);
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
@@ -95,8 +95,11 @@ public:
         frame = new QFrame(centralwidget);
         frame->setObjectName(QString::fromUtf8("frame"));
         frame->setGeometry(QRect(10, 90, 341, 561));
-        sizePolicy.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
-        frame->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
+        frame->setSizePolicy(sizePolicy1);
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         label_21 = new QLabel(frame);
@@ -557,7 +560,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "\346\271\226\345\214\227\347\224\265\350\203\275\345\276\256\347\275\221\346\225\260\346\215\256\345\217\257\350\247\206\345\214\226\345\267\245\345\205\267", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "\346\231\272\350\203\275\345\276\256\347\224\265\347\275\221\346\216\247\345\210\266\347\256\227\346\263\225\345\244\215\346\274\224\347\263\273\347\273\237", nullptr));
         label_21->setText(QApplication::translate("MainWindow", "\351\205\215\347\224\265\347\275\221", nullptr));
         label_14->setText(QApplication::translate("MainWindow", "\345\205\211\344\274\2178MW", nullptr));
         label_4->setText(QString());

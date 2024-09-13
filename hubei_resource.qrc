@@ -15,5 +15,6 @@
         <file>images/upArrow-2.png</file>
         <file>images/downArrow-3.png</file>
         <file>images/upArrow-3.png</file>
+        <file>images/favicon.ico</file>
     </qresource>
 </RCC>

@@ -21,6 +21,7 @@ MOC_DIR = build/moc
 UI_DIR = build/ui
 RCC_DIR = build/rcc
 
+RC_FILE = appicon.rc
 # QXlsx code for Application Qt project
 QXLSX_PARENTPATH=./         # current QXlsx path is . (. means curret directory)
 QXLSX_HEADERPATH=./header/  # current QXlsx header path is ./header/
